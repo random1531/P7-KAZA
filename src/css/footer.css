@@ -1,0 +1,23 @@
+footer {
+    margin-top: 40px;
+    width: 1240px;
+    height: 209px;
+    background: rgba(0, 0, 0, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+img {
+    color: white;
+}
+p {
+    color: white;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 34.22px;
+    text-align: center;
+    margin: 0;
+}

@@ -5,6 +5,7 @@ import './index.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Accueil from './pages/Accueil'
 import Footer from './componement/footer'  
+import Apropos from './pages/Apropos'
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
    
@@ -12,6 +13,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <App />
       <Routes>
         <Route path="/" element={<Accueil />} />
+        <Route path="/a propos" element={<Apropos />} />
 
         
       </Routes>

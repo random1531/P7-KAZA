@@ -1,0 +1,34 @@
+#root {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.bannerpic {
+    position: absolute;
+    left: 0%;
+    z-index: 1;
+}
+
+.title {
+    z-index: 2;
+    position: inherit;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 68.45px;
+    text-align: left;
+}
+
+.ban {
+    margin-top: 30px;
+    display: flex;
+    position: relative;
+    height: 223px;
+}

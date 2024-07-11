@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import db from '../db.json';
 import '../css/maincontener.css'
+import Banner from '../componement/banner'
 
 async function addLocation() {
     const container = document.getElementById('contenaire_loc');
@@ -39,6 +40,8 @@ function Accueil() {
     }, []);
     return (
         <>
+            <Banner />
+
             <section className='contenaire' id='contenaire_loc'>
                 { }
             </section>

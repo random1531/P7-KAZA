@@ -1,0 +1,54 @@
+p {
+    color: black;
+}
+
+details {
+    background: rgba(255, 96, 96, 1);
+    width: 1023px;
+    border-radius: 5px;
+    
+}
+
+summary {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34.22px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+i {
+    font-size: 32px;
+    padding-right: 10px ;
+    margin: 0;
+}
+
+.aproposdetails {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.bgtest {
+    background: rgba(246, 246, 246, 1);
+   
+}
+
+
+
+details[open] .rotate{
+    
+        transform: rotate(180deg);
+        padding-right: 10px ;
+        padding-left: 10px ;
+    
+}

@@ -7,7 +7,7 @@
 
 .bannerpic {
     position: absolute;
-    left: 0%;
+    left: -313px;
     z-index: 1;
 }
 
@@ -31,4 +31,5 @@
     display: flex;
     position: relative;
     height: 223px;
+    
 }

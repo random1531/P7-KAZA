@@ -2,6 +2,11 @@ p {
     color: black;
 }
 
+
+.bannerapropos{
+    margin-top: 40px;
+}
+
 details {
     background: rgba(255, 96, 96, 1);
     width: 1023px;
@@ -40,7 +45,15 @@ i {
 
 .bgtest {
     background: rgba(246, 246, 246, 1);
-   
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.67px;
+    text-align: left;
+    margin: 0;
+    padding: 20px;
+    border-radius: 5px;
+    
 }
 
 

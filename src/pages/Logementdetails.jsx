@@ -1,0 +1,82 @@
+import React, { createElement, useEffect } from 'react';
+import db from '../db.json';
+import ReactDOM from 'react-dom/client'
+import '../css/logement.css'
+
+
+const iddb = localStorage.getItem("tokid")
+const logem = db.find(item => item.id === iddb);
+console.log(iddb)
+
+function Logementdetails() {
+    // useEffect(() => {
+    //     async function retf() {
+    //         const iddb = localStorage.getItem("tokid")
+    //         const logem =  db.find(item => item.id === iddb);
+    //         await logem
+    //     }
+    //     retf()
+    // });[logem]
+
+
+
+
+    return (
+        <>
+            <section id='imdg'>
+                <div>
+                    <img src={logem.cover} className='img_logement' alt="" />
+                </div>
+                <div className='firstcontenaire'>
+                    <div>
+                        <h1>{logem.title}</h1>
+                        <p>{logem.location}</p>
+                        <div className='tagss'>
+                            {logem.tags.map((element, index) => (
+                                <p key={index} className="tag">
+                                    {element}
+                                </p>
+                            ))}
+                        </div>
+                    </div>
+
+                    <div className='hoste_rating'>
+                        <div className='hoste'>
+                            <img src={logem.host.picture} alt="" className='picturehoste' />
+                            <p className='namehoste'>{logem.host.name}</p>
+                        </div>
+                        <div>
+                            <i className={`fa-solid fa-star ${"1" <= logem.rating ? "notat" : "notata"}`} ></i>
+                            <i className={`fa-solid fa-star ${"2" <= logem.rating ? "notat" : "notata"}`}></i>
+                            <i className={`fa-solid fa-star ${"3" <= logem.rating ? "notat" : "notata"}`}></i>
+                            <i className={`fa-solid fa-star ${"4" <= logem.rating ? "notat" : "notata"}`}></i>
+                            <i className={`fa-solid fa-star ${"5" <= logem.rating ? "notat" : "notata"}`}></i>
+                        </div>
+                    </div>
+                </div>
+                <div className='summ'>
+                    <div>
+
+                        <details className='detailsadd'>
+                            <summary className='summayradd' >Description<i className="fa-solid fa-angle-up rotate"></i>
+                            </summary>
+                            <p className='detailsp'>{logem.description}</p>
+                        </details>
+                    </div>
+                    <div>
+
+                        <details className='detailsadd'>
+                            <summary className='summayradd'>Equipement<i className="fa-solid fa-angle-up rotate"></i>
+                            </summary>
+                            <p className='detailsp'> {logem.equipments.map((element, index) => (
+                                <li key={index} className="equipementss">{element}</li>
+                            ))}</p>
+                        </details>
+                    </div>
+                </div>
+            </section>
+        </>
+    );
+}
+
+export default Logementdetails;

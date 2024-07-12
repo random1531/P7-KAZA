@@ -1,0 +1,117 @@
+.img_logement {
+    margin-top: 50px;
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+}
+
+
+.notat{
+    color: rgba(255, 96, 96, 1);
+    
+
+}
+
+.fa-star{
+    font-size: 24px;    
+
+}
+
+.notata{
+    color: rgba(227, 227, 227, 1);
+}
+
+.firstcontenaire{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tagss{
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;  
+height: 25px;
+}
+.tag{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(255, 96, 96, 1);
+    border-radius:  10px;
+    width: 115px;
+    margin: 0;
+    font-family: Montserrat;
+font-size: 14px;
+font-weight: 700;
+line-height: 19.96px;
+text-align: center;
+color: white;
+}
+
+
+.picturehoste{
+    height: 64px;
+    border-radius: 32px;
+    object-fit: cover;
+}
+
+.namehoste{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 500;
+line-height: 25.67px;
+text-align: right;
+width: 93px;
+height: 52px;
+top: 608px;
+left: 1170px;
+gap: 0px;
+opacity: 0px;
+color: rgba(255, 96, 96, 1);
+margin: 0;
+}
+
+.hoste{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 167px;
+}
+
+.hoste_rating{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.summ{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.summ div {
+    width: 40%;
+}
+
+.summ div details{
+    width: 100%;
+}
+
+.detailsp{
+    margin: 0;
+    background: rgba(246, 246, 246, 0.45);
+
+}
+
+.detailsadd{
+    background:transparent;
+    
+}
+
+.summayradd{
+    background-color: rgba(255, 96, 96, 1);
+    border-radius: 5px ;
+}

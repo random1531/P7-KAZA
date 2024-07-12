@@ -1,49 +1,29 @@
-import React, { useEffect } from 'react';
+import React, { useCallback, useEffect } from 'react';
 import db from '../db.json';
 import '../css/maincontener.css'
 import Banner from '../componement/banner'
-
-async function addLocation() {
-    const container = document.getElementById('contenaire_loc');
-
-    db.forEach(element => {
-        const nameofLocation = element.title;
-        const div = document.createElement('a');
-        div.className = 'location-item';
-        const documentTitle = document.createElement('p');
-        documentTitle.textContent = nameofLocation;
-        const img = document.createElement('img');
-        img.src = element.cover;
-        img.alt = nameofLocation;
-        img.className = 'location-image';       
-        div.setAttribute("id", element.id)
-        div.appendChild(img);
-        div.appendChild(documentTitle);
-        container.appendChild(div);
-        div.classList.add("contloc")
-    });
-
-    document.querySelectorAll('.location-item').forEach(item => {
-        item.addEventListener('click', (e) => {
-            localStorage.setItem("tokid", e.currentTarget.id)
-            
-
-        });
-    });
-}
+import { Link } from 'react-router-dom';
+import ReactDOM from 'react-dom/client'
+console.log(db.map(element => element))
 
 function Accueil() {
-
-
-    useEffect(() => {
-        addLocation();
-    }, []);
+       useEffect(() => {
+        window.addEventListener('click',(e)=>{
+            localStorage.setItem("tokid",e.target.id) });
+           
+       });
     return (
         <>
             <Banner />
 
             <section className='contenaire' id='contenaire_loc'>
-                { }
+            {db.map(element => (
+                <Link to="/logement" key={element.id} id={element.id} className="location-item contloc">
+                    <img src={element.cover} alt={element.title} className="location-image" id={element.id} />
+                    <p>{element.title}</p>
+                    
+                </Link>
+            ))}
             </section>
         </>
     )

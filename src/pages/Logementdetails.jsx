@@ -3,7 +3,7 @@ import db from '../db.json';
 import ReactDOM from 'react-dom/client'
 import '../css/logement.css'
 import { useParams } from 'react-router-dom';
-
+import Imglogment from '../componement/logementimg'
 
 function Logementdetails() {
     const { id } = useParams()
@@ -17,20 +17,12 @@ function Logementdetails() {
         const rightclick = (currentIndex - 1 + logem.pictures.length) % logem.pictures.length
         setCurrentIndex(rightclick)
     }
-  
 
     return (
         <>
             <section id='imdg'>
-                <div className='imgcontente'>
-                    <div className='arrows'>
-                        <i className={`fa-solid fa-chevron-left ${logem.pictures.length === 1 ? 'activate' : ''}`} id='left' onClick={left}></i>
-                        <i className={`fa-solid fa-chevron-right ${logem.pictures.length === 1 ? 'activate' : ''}`} id='right' onClick={right}></i>
-                        <p className='picturet_lenght'>{currentIndex + 1}/{logem.pictures.length}</p>
-                    </div>
-                    <img src={logem.pictures[currentIndex]} className='img_logement' alt="" />
+                <Imglogment />
 
-                </div>
                 <div className='firstcontenaire'>
                     <div>
                         <h1>{logem.title}</h1>
@@ -50,7 +42,7 @@ function Logementdetails() {
                             <p className='namehoste'>{logem.host.name}</p>
                         </div>
                         <div>
-                            <i className={`fa-solid fa-star ${"1" <= logem.rating ? "notat" : "notata"}`} ></i>
+                            <i className={`fa-solid fa-star ${"1" <= logem.rating ? "notat" : "notata"}`}></i>
                             <i className={`fa-solid fa-star ${"2" <= logem.rating ? "notat" : "notata"}`}></i>
                             <i className={`fa-solid fa-star ${"3" <= logem.rating ? "notat" : "notata"}`}></i>
                             <i className={`fa-solid fa-star ${"4" <= logem.rating ? "notat" : "notata"}`}></i>

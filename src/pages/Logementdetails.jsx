@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom/client'
 import '../css/logement.css'
 import { useParams } from 'react-router-dom';
 import Imglogment from '../componement/logementimg'
+import Starts from '../componement/Starts';
 
 function Logementdetails() {
     const { id } = useParams()
@@ -17,12 +18,10 @@ function Logementdetails() {
         const rightclick = (currentIndex - 1 + logem.pictures.length) % logem.pictures.length
         setCurrentIndex(rightclick)
     }
-
     return (
         <>
             <section id='imdg'>
                 <Imglogment />
-
                 <div className='firstcontenaire'>
                     <div>
                         <h1>{logem.title}</h1>
@@ -41,13 +40,7 @@ function Logementdetails() {
                             <img src={logem.host.picture} alt="" className='picturehoste' />
                             <p className='namehoste'>{logem.host.name}</p>
                         </div>
-                        <div>
-                            <i className={`fa-solid fa-star ${"1" <= logem.rating ? "notat" : "notata"}`}></i>
-                            <i className={`fa-solid fa-star ${"2" <= logem.rating ? "notat" : "notata"}`}></i>
-                            <i className={`fa-solid fa-star ${"3" <= logem.rating ? "notat" : "notata"}`}></i>
-                            <i className={`fa-solid fa-star ${"4" <= logem.rating ? "notat" : "notata"}`}></i>
-                            <i className={`fa-solid fa-star ${"5" <= logem.rating ? "notat" : "notata"}`}></i>
-                        </div>
+                        <Starts />
                     </div>
                 </div>
                 <div className='summ'>

@@ -1,25 +1,22 @@
-import { Link } from 'react-router-dom'
-import Logo from '../assets/logo.svg'
-import '../css/App.css'
-import ReactDOM from 'react-dom/client'
+import { Link, Outlet } from 'react-router-dom';
+import Logo from '../assets/logo.svg';
+import Footer from './footer';
+import '../css/App.css';
+import '../css/Banner.css'
+import Headers from './header'
 function App() {
-  
-
   return (
     <>
-      <nav className='header'>
-        <img src={Logo} className="logo" alt="logo Kasa" />
-        <div>
-          <ul className='header__nav'>
-            
-            <li className='header__nav__li'><Link to="">Accueil</Link></li>
-            <li className='header__nav__li'><Link to="a propos">A propos</Link></li>
-          </ul>
-        </div>
-      </nav>
+    <Headers />
+      
+    
+      <main>
+        <Outlet />
+      </main>
 
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

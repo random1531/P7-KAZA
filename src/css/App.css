@@ -1,14 +1,15 @@
 #root {
   max-width: 1240px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
+a{
+  text-decoration: none;
 
+}
 .header {
   display: flex;
   justify-content: space-between;
-  width: 1240px;
+  width: 100%;
   align-items: center;
 }
 
@@ -27,4 +28,17 @@
   font-weight: 500;
   line-height: 34.22px;
   text-align: right;
-  }
+}
+
+.header__nav__li a {
+  text-decoration: none;
+}
+
+.logo {
+  width: 210.32px;
+  height: 68px;
+}
+
+h1,h2,h3,h4,h5,a,p{
+  margin: 0;
+} 

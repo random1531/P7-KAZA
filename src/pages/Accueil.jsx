@@ -4,6 +4,7 @@ import '../css/maincontener.css'
 import Banner from '../componement/banner'
 import { Link } from 'react-router-dom';
 import ReactDOM from 'react-dom/client'
+
 console.log(db.map(element => element))
 
 function Accueil() {

@@ -5,19 +5,13 @@ import '../css/logement.css'
 import { useParams } from 'react-router-dom';
 import Imglogment from '../componement/logementimg'
 import Starts from '../componement/Starts';
-
+import Equipement from '../componement/description';
+import Description from '../componement/Des'
+import Hostinfo from '../componement/infohost';
+import Tags from '../componement/Tags';
 function Logementdetails() {
     const { id } = useParams()
-    const logem = db.find(item => item.id === id);
-    const [currentIndex, setCurrentIndex] = useState(0);
-    function right() {
-        const rightclick = (currentIndex + 1) % logem.pictures.length
-        setCurrentIndex(rightclick)
-    }
-    function left() {
-        const rightclick = (currentIndex - 1 + logem.pictures.length) % logem.pictures.length
-        setCurrentIndex(rightclick)
-    }
+    const logem = db.find(item => item.id === id);       
     return (
         <>
             <section id='imdg'>
@@ -26,42 +20,17 @@ function Logementdetails() {
                     <div>
                         <h1>{logem.title}</h1>
                         <p>{logem.location}</p>
-                        <div className='tagss'>
-                            {logem.tags.map((element, index) => (
-                                <p key={index} className="tag">
-                                    {element}
-                                </p>
-                            ))}
-                        </div>
+                        <Tags />
                     </div>
 
                     <div className='hoste_rating'>
-                        <div className='hoste'>
-                            <img src={logem.host.picture} alt="" className='picturehoste' />
-                            <p className='namehoste'>{logem.host.name}</p>
-                        </div>
+                        <Hostinfo />
                         <Starts />
                     </div>
                 </div>
                 <div className='summ'>
-                    <div>
-
-                        <details className='detailsadd'>
-                            <summary className='summayradd' >Description<i className="fa-solid fa-angle-up rotate"></i>
-                            </summary>
-                            <p className='detailsp'>{logem.description}</p>
-                        </details>
-                    </div>
-                    <div>
-
-                        <details className='detailsadd'>
-                            <summary className='summayradd'>Equipement<i className="fa-solid fa-angle-up rotate"></i>
-                            </summary>
-                            <p className='detailsp'> {logem.equipments.map((element, index) => (
-                                <li key={index} className="equipementss">{element}</li>
-                            ))}</p>
-                        </details>
-                    </div>
+                    <Description />
+                    <Equipement />                    
                 </div>
             </section>
         </>

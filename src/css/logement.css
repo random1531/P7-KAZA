@@ -18,7 +18,42 @@
 }
 
 .firstcontenaire{
-    margin-top: 25px ;
+    margin-top: 15px ;
+}
+.firstcontenaire p{
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    text-align: left;    
+    
+    
+}
+.firstcontenaire h1 {
+    font-family: Montserrat;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 51.34px;
+    text-align: left;
+    color: #FF6060;
+
+    
+}
+
+.detailsp{
+    padding-top: 10px;
+    padding-left: 5px;
+}
+
+.equipementss{
+    font-family: Montserrat;
+font-size: 18px;
+font-weight: 400;
+line-height: 25.67px;
+text-align: left;
+
+    list-style: none;
+    text-align: left;
 }
 
 .imgcontente {
@@ -32,13 +67,19 @@
     align-items: center;
     justify-content: center;
 }
+
+.imgcontente img{
+    border-radius: 25px;
+}
+
 .fa-chevron-left {
     z-index: 2;
     position: absolute;
     cursor: pointer;
     left: 10px;
-    top: 200px;
+    top: 175px;
     color: white;
+    font-size: 79px;
 }
 .arrows {
     width: 1240px;
@@ -54,8 +95,9 @@
     position: absolute;
     cursor: pointer;
     right: 10px;
-    top: 200px;
+    top: 175px;
     color: white;
+    font-size: 79px;
 }
 
 .picturet_lenght {
@@ -67,6 +109,7 @@
     font-weight: 500;
     line-height: 25.67px;
     text-align: center;
+    bottom: 15px;
 }
 .notat {
     color: rgba(255, 96, 96, 1);
@@ -86,8 +129,7 @@
 }
 
 .tagss {
-    display: flex;
-    justify-content: space-around;
+    display: flex;    
     gap: 20px;
     height: 25px;
 }
@@ -97,7 +139,7 @@
     justify-content: center;
     background-color: rgba(255, 96, 96, 1);
     border-radius: 10px;
-    width: 115px;
+    padding: 5px;
     margin: 0;
     font-family: Montserrat;
     font-size: 14px;
@@ -117,8 +159,7 @@
     font-family: Montserrat;
     font-size: 18px;
     font-weight: 500;
-    line-height: 25.67px;
-    text-align: right;
+    line-height: 25.67px;    
     width: 93px;
     height: 52px;
     top: 608px;
@@ -161,6 +202,7 @@
 .detailsp {
     margin: 0;
     background: rgba(246, 246, 246, 0.45);
+    text-align: left;
 }
 
 .detailsadd {

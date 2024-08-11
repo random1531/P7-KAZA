@@ -1,28 +1,21 @@
-import React, { useCallback, useEffect } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import db from '../../public/db.json';
 import '../css/maincontener.css'
 import Banner from '../componement/banner'
 import { Link } from 'react-router-dom';
 import ReactDOM from 'react-dom/client'
+import Getdata from '../componement/GetData';
 
 
 
 function Accueil() {
-    useEffect(() => {
-        async function database() {
-            const data = await fetch ('../../public/db.json')
-            const datata = await data.json()    
-            console.log(datata)
-            }
-            
-            database()
-        });
-       
+     
+    const [db, setDb] = useState([]);
     
     return (
         <>
-            <Banner />
-
+        <Getdata onDataLoad={setDb} /> 
+            <Banner  />
             <section className='contenaire' id='contenaire_loc'>
                 {db.map(element => (
                     <Link to={`/logement/${element.id}`} key={element.id} id={element.id} className="location-item contloc">

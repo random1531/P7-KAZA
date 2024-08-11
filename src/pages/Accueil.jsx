@@ -1,19 +1,24 @@
 import React, { useCallback, useEffect } from 'react';
-import db from '../db.json';
+import db from '../../public/db.json';
 import '../css/maincontener.css'
 import Banner from '../componement/banner'
 import { Link } from 'react-router-dom';
 import ReactDOM from 'react-dom/client'
 
-console.log(db.map(element => element))
+
 
 function Accueil() {
     useEffect(() => {
-        window.addEventListener('click', (e) => {
-            localStorage.setItem("tokid", e.target.id)
+        async function database() {
+            const data = await fetch ('../../public/db.json')
+            const datata = await data.json()    
+            console.log(datata)
+            }
+            
+            database()
         });
-
-    });
+       
+    
     return (
         <>
             <Banner />

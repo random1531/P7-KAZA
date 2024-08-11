@@ -1,5 +1,5 @@
 import React, { createElement, useEffect, useState } from 'react';
-import db from '../db.json';
+import db from '../../public/db.json';
 import ReactDOM from 'react-dom/client'
 import '../css/logement.css'
 import { useParams } from 'react-router-dom';

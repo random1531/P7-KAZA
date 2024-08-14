@@ -2,16 +2,18 @@ p {
     color: black;
 }
 
-
-.bannerapropos{
+.bannerapropos {
     margin-top: 40px;
 }
 
 details {
     background: rgba(255, 96, 96, 1);
-    width: 1023px;
+    width: 100%;
     border-radius: 5px;
-    
+    transition: max-height 8s ease-out;
+    max-height: 400px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 summary {
@@ -30,7 +32,7 @@ summary {
 
 i {
     font-size: 32px;
-    padding-right: 10px ;
+    padding-right: 10px;
     margin: 0;
 }
 
@@ -40,7 +42,7 @@ i {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
+    width: 100%;
 }
 
 .bgtest {
@@ -52,16 +54,23 @@ i {
     text-align: left;
     margin: 0;
     padding: 20px;
-    border-radius: 5px;
-    
+    border-radius: 0px 0px 5px 5px;
 }
 
-
-
-details[open] .rotate{
-    
-        transform: rotate(180deg);
-        padding-right: 10px ;
-        padding-left: 10px ;
-    
+details[open] .rotate {
+    transform: rotate(180deg);
+    padding-right: 10px;
+    padding-left: 10px;
+ 
 }
+
+details {
+    overflow: hidden;
+    transition: max-height 1s ease-out;
+    max-height: 34px; 
+}
+
+details[open] {
+    max-height: 400px;
+}
+

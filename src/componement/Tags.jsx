@@ -1,14 +1,13 @@
 import React, { createElement, useEffect, useState } from 'react';
-import db from '../../public/db.json';
-import '../css/logement.css'
-import { useParams } from 'react-router-dom';
 
-function Tags(){
-    const { id } = useParams()
-    const logem = db.find(item => item.id === id);
+import '../css/logement.css'
+
+
+function Tags({logement}){
+    
     return(
 <div className='tagss'>
-                            {logem.tags.map((element, index) => (
+                            {logement.tags.map((element, index) => (
                                 <p key={index} className="tag">
                                     {element}
                                 </p>

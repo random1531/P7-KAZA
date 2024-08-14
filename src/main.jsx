@@ -1,33 +1,30 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './componement/App'
-import './index.css'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import Accueil from './pages/Accueil'
-import Footer from './componement/footer'
-import Apropos from './pages/Apropos'
-import Eror from './pages/Eror'
-import Logementdetails from './pages/Logementdetails'
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from "react-router-dom";
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import './css/index.css'
+import Accueil from './pages/Accueil.jsx';
+import Template from './componement/Maincompement.jsx'
+import Apropos from './pages/Apropos.jsx';
+import Error from './pages/Error.jsx'
+import LogementDetails from './pages/Logement.jsx'
+
 
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <App />, 
-    errorElement : <Eror/>,
+    element: <Template />,    
+    errorElement:<Error />,
     children: [
       { path: '/', element: <Accueil />, key: 'accueil'},
-      { path: 'apropos', element: <Apropos />, key: 'apropos' },
-      { path: 'logement/:id', element: <Logementdetails />, key: 'logementdetails' },
+      { path: 'logement/:id', element: <LogementDetails />, key: 'logement' },   
+      { path: 'apropos', element: <Apropos />, key: 'apropos' },     
     ],
   },
 ]);
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <RouterProvider router={router} />
-  </React.StrictMode>
-);
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+      <RouterProvider router={router} />
+  </StrictMode>,
+)

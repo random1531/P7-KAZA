@@ -1,10 +1,11 @@
-import logofooters from '../assets/logofooter.svg'
+import logowhite from '../pictures/Logowhite.png'
 import '../css/footer.css'
+
 function Footer() {
        return (
         <>
            <footer>
-           <img src={logofooters} className="logofooter" alt="banner" />
+           <img src={logowhite} className="logofooter" alt="Logo kaza" />
            <p className='footerp'>© 2020 Kasa. All rights reserved</p>
            </footer>
         </>

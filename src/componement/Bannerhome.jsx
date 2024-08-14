@@ -1,4 +1,4 @@
-import bannerpic from '../image/banneraccueil.png'
+import bannerpic from '../pictures/banneraccueil.png'
 import '../css/Banner.css'
 
 function Banners() {

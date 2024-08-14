@@ -5,14 +5,14 @@ function Getdata({onDataLoad}){
 
     useEffect(() => {
         async function database() {
-            const data = await fetch ('../../public/db.json')
-            const datata = await data.json()    
-            SetData(datata)   
-            onDataLoad(datata);         
+            const respons = await fetch ('../../public/db.json')
+            const data = await respons.json()    
+            SetData(data)   
+            onDataLoad(data);         
             }            
             database()
         },[onDataLoad]);  
-        
+       
         return null;
 }
 export default Getdata

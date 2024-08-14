@@ -1,0 +1,61 @@
+.logoHeader {
+    width: 145px;
+    height: 46.88px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    color: black;
+}
+
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBarre {
+    display: flex;    
+    width: 100%;   
+    align-items: center;
+    justify-content: space-between;    
+}
+
+.active {
+    text-decoration: underline;
+}
+
+.navLink {
+    color: black;
+    font-family: Montserrat;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 17.11px;
+    text-align: right;
+}
+
+@media screen and (min-width: 900px) {
+    #root{
+        max-width: 1440px;
+      }
+      
+    .navLink {
+        font-size: 24px;
+        line-height: 34.22px;
+    }
+
+    .logoHeader {
+        width: 210px;
+        height: 68px;
+    }
+    .navBarre {      
+        max-width: 1240px;
+        margin: auto;
+    }
+
+    nav ul {        
+        gap: 50px;     
+    }
+}

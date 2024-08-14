@@ -1,26 +1,7 @@
-.img_logement {
-    width: 100%;
-    height: 415px;
-    top: 0;
-    left: 0;
-    position: absolute;
-    object-fit: cover;
-}
-.activate {
-    display: none;
-}
-
-#root {
-    max-width: 1240px;
-    margin: 0 auto;
-    padding: 2rem;
-    text-align: center;
-}
-
-#imdg{
+#imdg {
     width: 100%;
 }
-.info_logement{
+.info_logement {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -30,171 +11,12 @@
     margin-top: 15px;
     display: flex;
     flex-direction: column;
-}
-.firstcontenaire p {
-    font-family: Montserrat;
-font-size: 14px;
-font-weight: 500;
-line-height: 19.96px;
-text-align: left;
-
-}
-
-.firstcontenaire h1 {
-    font-family: montserrat;
-    width: 335px;
-    height: 46px;
-    top: 363.88px;
-    left: 20px;
-    gap: 0px;
-    opacity: 0px;
-    
-    text-align: left;
-    color: #ff6060;
-}
-
-.detailsp {
-    padding-top: 10px;
-    padding-left: 5px;
-}
-
-.equipementss {
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 25.67px;
-    text-align: left;
-    list-style: none;
-    text-align: left;
-}
-
-.imgcontente {
-    margin-top: 50px;
-    width: 100%;
-    height: 415px;
-    border-radius: 25px;
-    position: relative;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.imgcontente img {
-    border-radius: 25px;
-}
-
-.fa-chevron-left {
-    z-index: 2;
-    position: absolute;
-    cursor: pointer;
-    left: 10px;
-    top: 175px;
-    color: white;
-    font-size: 79px;
-}
-.arrows {
-    width: 1240px;
-    height: 415px;
-    position: inherit;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.fa-chevron-right {
-    z-index: 2;
-    position: absolute;
-    cursor: pointer;
-    right: 10px;
-    top: 175px;
-    color: white;
-    font-size: 79px;
-}
-
-.picturet_lenght {
-    z-index: 3;
-    color: white;
-    position: inherit;
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 25.67px;
-    text-align: center;
-    bottom: 15px;
-}
-.notat {
-    color: rgba(255, 96, 96, 1);
-}
-
-.notation_starts{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.fa-star {
-    font-size: 18px;
-}
-
-.notata {
-    color: rgba(227, 227, 227, 1);
+    gap: 10px;
 }
 
 .firstcontenaire {
     display: flex;
     justify-content: space-between;
-}
-
-.tagss {
-    display: flex;
-    gap: 20px;
-    height: 25px;
-}
-.tag {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(255, 96, 96, 1);
-    border-radius: 10px;
-    padding: 5px;
-    margin: 0;
-    font-family: Montserrat;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 19.96px;
-    text-align: center;
-    color: white;
-}
-
-.picturehoste {
-    height: 64px;
-    border-radius: 32px;
-    object-fit: cover;
-}
-
-.namehoste {
-    font-family: Montserrat;
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 25.67px;
-    width: 93px;
-    height: 52px;
-    top: 608px;
-    left: 1170px;
-    gap: 0px;
-    opacity: 0px;
-    color: rgba(255, 96, 96, 1);
-    margin: 0;
-}
-
-.hoste {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    width: 167px;
 }
 
 .hoste_rating {
@@ -203,37 +25,28 @@ text-align: left;
     justify-content: space-between;
     gap: 30px;
 }
-
-.summ {
-    margin-top: 30px;
+.logement_tile_location{
     display: flex;
     flex-direction: column;
-    width: 100%;
-    justify-content: space-between;
-    gap: 40px;
+    gap: 10px;
 }
 
-.summ div {
-    width: 100%;
+.summ{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-.summ div details {
-    width: 100%;
+.equipementss {
+    list-style: none;
 }
 
-.detailsp {
-    margin: 0;
-    background: rgba(246, 246, 246, 0.45);
-    text-align: left;
-}
 
-.detailsadd {
-    background: transparent;
-    width: 100% ;
-}
-
-.summayradd {
-    background-color: rgba(255, 96, 96, 1);
-    border-radius: 5px;
-    width: 100%;
+@media screen and (min-width: 900px) {
+    .summ{
+        margin-top: 10px;        
+        flex-direction: row;
+        gap: 10px;
+    }
 }

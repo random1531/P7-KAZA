@@ -1,6 +1,5 @@
 import React, { createElement, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
-import '../css/logement.css'
+import '../css/stars.css'
 
 
 export function Starts({ logement }) {        

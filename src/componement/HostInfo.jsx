@@ -1,5 +1,5 @@
 import React, { createElement, useEffect, useState } from 'react';
-import '../css/logement.css'
+import '../css/hosteinfo.css'
 
 
 function Hostinfo({logement}){

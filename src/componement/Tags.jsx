@@ -1,6 +1,6 @@
 import React, { createElement, useEffect, useState } from 'react';
 
-import '../css/logement.css'
+import '../css/tags.css'
 
 
 function Tags({logement}){

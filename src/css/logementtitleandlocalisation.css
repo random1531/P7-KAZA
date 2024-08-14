@@ -1,0 +1,35 @@
+.logement_title {
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    text-align: left;
+    color: #ff6060;
+}
+
+.logement_localisation {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 19.96px;
+    text-align: left;
+}
+
+
+.logement-title-and-localisation{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+@media screen and (min-width: 900px) {
+    .logement_title {
+        font-size: 36px;
+        line-height: 51.34px;
+    }
+
+    .logement_localisation {
+        font-size: 18px;
+        line-height: 25.67px;
+    }
+}

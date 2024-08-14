@@ -1,0 +1,17 @@
+.notat {
+    color: rgba(255, 96, 96, 1);
+}
+
+.notation_starts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fa-star {
+    font-size: 18px;
+}
+
+.notata {
+    color: rgba(227, 227, 227, 1);
+}

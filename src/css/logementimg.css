@@ -1,0 +1,76 @@
+.imgcontente {
+    margin-top: 50px;
+    width: 100%;
+    height: 255px;
+    border-radius: 25px;
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imgcontente img {
+    border-radius: 25px;
+}
+
+
+.fa-chevron-left {
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    left: 10px;
+    top: 117px;
+    color: white;
+    font-size: 24px;
+}
+.fa-chevron-right {
+    z-index: 2;
+    position: absolute;
+    cursor: pointer;
+    right: 10px;
+    top: 117px;
+    color: white;
+    font-size: 24px;
+}
+.arrows {
+    width: 1240px;
+    height: 100%;
+    position: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.img_logement {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    object-fit: cover;
+}
+
+.picturet_lenght {
+    z-index: 3;
+    color: white;
+    position: inherit;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25.67px;
+    text-align: center;
+    bottom: 15px;
+}
+
+@media screen and (min-width: 900px) {
+    .imgcontente {
+        height: 415px;
+    }
+
+    .fa-chevron-right,
+    .fa-chevron-left {
+        font-size: 79px;
+        top: 179px;
+    }
+}

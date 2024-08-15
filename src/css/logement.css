@@ -47,6 +47,22 @@
     .summ{
         margin-top: 10px;        
         flex-direction: row;
+        justify-content: space-between;
         gap: 10px;
+    }
+
+    .summ details {
+        width: 45%;
+    } 
+
+    .hoste_rating {
+        display: flex;
+        flex-direction:column;        
+        gap: 30px;
+        align-items: center;
+    }
+    .firstcontenaire {
+        display: flex;
+        flex-direction:row;
     }
 }

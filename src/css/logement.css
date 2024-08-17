@@ -51,12 +51,9 @@
         gap: 10px;
     }
 
-    /* .summ div {
-        width: 90%;
-        display: flex;
-
-    }  */
-
+    .details {       
+        width: 47%;
+    }
     .hoste_rating {
         display: flex;
         flex-direction:column;        

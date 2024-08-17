@@ -7,6 +7,7 @@ import Tags from '../componement/Tags';
 import Hostinfo from '../componement/HostInfo';
 import Details from '../componement/Details'
 import Error from './Error';
+import ErrorContent from '../componement/ErrorContent'
 import LogementTitleAndLocalisation from '../componement/LogementNameAndLocalisation';
 import '../css/logement.css'
 
@@ -14,7 +15,7 @@ function LogementDetails() {
     const { id } = useParams();
     const logement = useLogementDetails(id);
     if (!logement) {
-        return <Error />;
+        return <ErrorContent/>;
     }
 
     return (

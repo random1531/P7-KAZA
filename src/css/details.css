@@ -45,6 +45,10 @@ i {
     width: 100%;
 }
 
+.aproposdetails .details{
+    width: 100%;
+}
+
 .bgtest {
     background: rgba(246, 246, 246, 1);
     font-family: Montserrat;

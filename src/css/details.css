@@ -6,14 +6,14 @@ p {
     margin-top: 40px;
 }
 
-details {
+.details {
     background: rgba(255, 96, 96, 1);
-    width: 100%;
+    width: 47%;
     border-radius: 5px;
-    transition: max-height 8s ease-out;
-    max-height: 400px;
+    transition: max-height 0.5s ease-out;
     overflow: hidden;
-    cursor: pointer;
+    cursor: pointer;     
+    max-height: 34px; 
 }
 
 summary {
@@ -55,22 +55,52 @@ i {
     margin: 0;
     padding: 20px;
     border-radius: 0px 0px 5px 5px;
+    cursor:auto;
+}
+.rotate{
+    transition: transform 0.3s ease-out;
 }
 
-details[open] .rotate {
+
+
+.expaded .rotate {
     transform: rotate(180deg);
     padding-right: 10px;
-    padding-left: 10px;
- 
+    padding-left: 10px; 
 }
 
-details {
-    overflow: hidden;
-    transition: max-height 1s ease-out;
-    max-height: 34px; 
-}
+
 
 details[open] {
     max-height: 400px;
+}
+
+details:not([open]) {
+    max-height: 34px;
+}
+
+.expaded {
+    max-height: 400px;   
+}
+
+.collapsed {
+    max-height: 34px;    
+}
+
+.details_header{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    width: 100%;
+    align-items: center;
+}
+
+.details_header h2{
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 34.22px;
+    text-align: left;
+    padding-left: 10px;
 }
 

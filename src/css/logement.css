@@ -51,9 +51,11 @@
         gap: 10px;
     }
 
-    .summ details {
-        width: 45%;
-    } 
+    /* .summ div {
+        width: 90%;
+        display: flex;
+
+    }  */
 
     .hoste_rating {
         display: flex;

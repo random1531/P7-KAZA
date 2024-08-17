@@ -5,7 +5,6 @@ async function Getdatas() {
     const data = await respons.json();
     return data;
 }
-
 export { Getdatas };
 
 function useLogementDetails(id) {
@@ -20,7 +19,6 @@ function useLogementDetails(id) {
 
         fetchData();
     }, [id]);
-
     return logement;
 }
 

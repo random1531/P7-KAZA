@@ -1,27 +1,26 @@
-import { useEffect, useRef } from 'react';
+import { useContext, useEffect, useRef, useState } from 'react';
 import React from 'react';
 import '../css/details.css'
 
 
 function Details({ summary, children }) {
+    const [colapse, setColapse] = useState(true);
 
-    document.querySelectorAll('details').forEach((detail) => {
-        detail.addEventListener('toggle', function() {
-            if (this.open) {
-                this.style.maxHeight = this.scrollHeight + 'px';
-            } else {
-                this.style.maxHeight = '34px';
-            }
-        });
-    });
-   
 
     return (
-        <details>
-            <summary>{summary}<i className="fa-solid fa-angle-up rotate"></i>
-            </summary>
-            <p className='bgtest'>{children}</p>
-        </details>
+
+        <div className={`details ${colapse ? 'collapsed' : 'expaded'}`}>
+            <div className='details_header'>
+                <h2>{summary}</h2>
+                <i className="fa-solid fa-angle-up rotate" onClick={()=>{
+                    setColapse(!colapse)
+                }}></i>
+            </div>
+            <div className='details_content'>
+                <p className='bgtest'>{children}</p>
+            </div>
+        </div>
+
     )
 }
 

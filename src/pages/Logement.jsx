@@ -20,28 +20,27 @@ function LogementDetails() {
     return (
         <>
             <section id='imdg'>
-
-                <Imglogment logement={logement} />                
+                <Imglogment logement={logement} />
                 <div className='info_logement'>
-
                     <div className='firstcontenaire'>
-
                         <div className='logement_tile_location'>
                             <LogementTitleAndLocalisation logement={logement} />
                             <Tags logement={logement} />
                         </div>
-
                         <div className='hoste_rating'>
                             <Hostinfo logement={logement} />
                             <Starts logement={logement} />
-                        </div>                        
+                        </div>
                     </div>
-
                     <div className='summ'>
-                        <Details summary="Description" >{logement.description}</Details>
-                        <Details summary="Equipement" >{logement.equipments.map((element, index) => (
-                            <li key={index} className="equipementss">{element}</li>
-                        ))}</Details>
+                        
+                            <Details summary="Description" >{logement.description}</Details>
+                        
+                            <Details summary="Equipement" >{logement.equipments.map((element, index) => (
+
+                                <li key={index} className="equipementss">{element}</li>
+                            ))}</Details>
+                       
                     </div>
 
                 </div>

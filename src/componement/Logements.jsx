@@ -16,7 +16,7 @@ function Logements() {
                         <img src={element.cover} alt={element.title} className="location-image" id={element.id} />                        
                         <p>{element.title}</p>
                         
-
+                            
                     </Link>
                 ))}
             </section>

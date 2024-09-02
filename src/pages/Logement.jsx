@@ -9,12 +9,13 @@ import Details from '../componement/Details'
 import Error from './Error';
 import LogementTitleAndLocalisation from '../componement/LogementNameAndLocalisation';
 import '../css/logement.css'
+import ErrorBis from '../componement/errors';
 
 function LogementDetails() {
     const { id } = useParams();
     const logement = useLogementDetails(id);
     if (!logement) {
-        return <Error />;
+        return <ErrorBis />;
     }
 
     return (

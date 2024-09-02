@@ -85,6 +85,7 @@ details:not([open]) {
 
 .collapsed {
     max-height: 34px;    
+    width: 100%;
 }
 
 .details_header{

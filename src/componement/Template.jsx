@@ -6,8 +6,7 @@ function Template() {
     return (
         <>
             <Headers />
-            <main>
-            
+            <main>            
                 <Outlet />
             </main>
             <Footer />

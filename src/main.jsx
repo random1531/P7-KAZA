@@ -3,7 +3,7 @@ import { createRoot } from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './css/index.css'
 import Accueil from './pages/Accueil.jsx';
-import Template from './componement/Maincompement.jsx'
+import Template from './componement/Template.jsx'
 import Apropos from './pages/Apropos.jsx';
 import Error from './pages/Error.jsx'
 import LogementDetails from './pages/Logement.jsx'

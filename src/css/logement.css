@@ -43,7 +43,7 @@
 }
 
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 980px) {
     .summ{
         margin-top: 10px;        
         flex-direction: row;

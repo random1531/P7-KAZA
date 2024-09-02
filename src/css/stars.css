@@ -16,7 +16,7 @@
     color: rgba(227, 227, 227, 1);
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 980px) {
     
     .fa-star {
         font-size: 36px;

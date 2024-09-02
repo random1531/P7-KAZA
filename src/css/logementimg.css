@@ -64,6 +64,11 @@
     bottom: 15px;
 }
 
+
+.activate{
+    display: none;
+}
+
 @media screen and (min-width: 980px) {
     .imgcontente {
         height: 415px;

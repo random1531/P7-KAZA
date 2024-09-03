@@ -1,8 +1,8 @@
 import React, { useCallback, useEffect } from 'react';
-import '../css/eror.css'
+import '../../src/componement/main/Error/eror.css'
 import { Link } from 'react-router-dom';
-import Footer from '../componement/Footer';
-import Headers from '../componement/Headers'
+import Footer from '../componement/footer/footer';
+import Headers from '../componement/Header/Headers'
 
 
 

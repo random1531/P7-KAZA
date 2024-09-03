@@ -1,6 +1,6 @@
 import { Link, NavLink, Outlet } from 'react-router-dom';
 import Logo from '../image/logod.png';
-import Footer from './footer';
+import Footer from '../footer/footer';
 import '../css/App.css';
 import '../css/Banner.css'
 

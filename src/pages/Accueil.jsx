@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect } from 'react';
-import Logements from '../componement/Logements';
-import Banners from '../componement/Bannerhome'
+import Logements from '../componement/main/AccueilLogments/Logements';
+import Banners from '../componement/main/Banner/Bannerhome'
 
 
 function Accueil() {

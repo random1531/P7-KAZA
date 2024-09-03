@@ -1,6 +1,6 @@
 import bannerpic from '../assets/bannerapropo.svg'
-import BannerApropo from '../componement/Bannerapropos'
-import Details from '../componement/Details'
+import BannerApropo from '../componement/main/Banner/Bannerapropos'
+import Details from '../componement/main/Details/Details'
 
 
 function Apropos() {

@@ -1,6 +1,6 @@
 import { useContext, useEffect, useRef, useState } from 'react';
 import React from 'react';
-import '../css/details.css'
+import './details.css'
 
 
 function Details({ summary, children }) {

@@ -1,15 +1,15 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import Starts from '../componement/Starts';
-import useLogementDetails from '../componement/useLogementDetails';
-import Imglogment from '../componement/LogementImg';
-import Tags from '../componement/Tags';
-import Hostinfo from '../componement/HostInfo';
-import Details from '../componement/Details'
+import Starts from '../componement/main/Logement details/Stars/Starts';
+import useLogementDetails from '../componement/Hooks/useLogementDetails';
+import Imglogment from '../componement/main/Logement details/ImgLogement/logementimg';
+import Tags from '../componement/main/Logement details/Tags/Tags';
+import Hostinfo from '../componement/main/Logement details/HostInfo/HostInfo';
+import Details from '../componement/main/Details/Details'
 import Error from './Error';
-import LogementTitleAndLocalisation from '../componement/LogementNameAndLocalisation';
+import LogementTitleAndLocalisation from '../componement/main/Logement details/NameAndLocLogment/LogementNameAndLocalisation';
 import '../css/logement.css'
-import ErrorBis from '../componement/errors';
+import ErrorBis from '../componement/main/Error/errors';
 
 function LogementDetails() {
     const { id } = useParams();

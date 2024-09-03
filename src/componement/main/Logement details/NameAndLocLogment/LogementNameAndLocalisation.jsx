@@ -1,4 +1,4 @@
-import '../css/logementtitleandlocalisation.css';
+import './logementtitleandlocalisation.css';
 
 function LogementTitleAndLocalisation({ logement }) {
   return (

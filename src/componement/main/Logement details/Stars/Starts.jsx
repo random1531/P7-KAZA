@@ -1,5 +1,5 @@
 import React, { createElement, useEffect, useState } from 'react';
-import '../css/stars.css'
+import './stars.css'
 
 
 export function Starts({ logement }) {        

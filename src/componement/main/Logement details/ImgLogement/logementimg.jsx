@@ -1,5 +1,5 @@
 import React, { createElement, useEffect, useState } from 'react';
-import '../css/logementimg.css'
+import './logementimg.css'
 
 
 export function Imglogment({logement}) {

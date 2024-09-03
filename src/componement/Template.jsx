@@ -1,6 +1,6 @@
 import { Link, Outlet } from 'react-router-dom';
-import Footer from './Footer';
-import Headers from './Headers'
+import Footer from './footer/footer';
+import Headers from './Header/Headers'
 
 function Template() {
     return (

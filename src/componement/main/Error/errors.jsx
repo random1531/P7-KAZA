@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom"
-import '../css/eror.css'
+import './eror.css'
 
 
 function ErrorBis(){

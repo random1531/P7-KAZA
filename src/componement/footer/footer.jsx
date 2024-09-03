@@ -1,5 +1,5 @@
-import logowhite from '../pictures/Logowhite.png'
-import '../css/footer.css'
+import logowhite from '../../pictures/Logowhite.png'
+import './footer.css'
 
 function Footer() {
        return (

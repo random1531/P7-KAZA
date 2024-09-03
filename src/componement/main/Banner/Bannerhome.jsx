@@ -1,5 +1,5 @@
-import bannerpic from '../pictures/banneraccueil.png'
-import '../css/Banner.css'
+import bannerpic from '../../../pictures/banneraccueil.png'
+import './Banner.css'
 
 function Banners() {
     return (

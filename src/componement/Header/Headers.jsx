@@ -1,5 +1,5 @@
-import Logo from '../pictures/logod.png'
-import '../css/header.css'
+import Logo from '../../pictures/logod.png'
+import './header.css'
 import { NavLink } from 'react-router-dom'
 
 function Headers(){
